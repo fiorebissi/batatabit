@@ -1,0 +1,50 @@
+env:
+  browser: true
+  es2021: true
+  node: true
+extends:
+  - 'plugin:react/recommended'
+  - standard
+  - 'plugin:react-hooks/recommended'
+  - 'plugin:@next/next/recommended'
+  - 'plugin:jsx-a11y/recommended'
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 12
+  sourceType: module
+plugins:
+  - react
+  - '@typescript-eslint'
+globals:
+  React: true
+  JSX: true
+rules:
+  indent:
+    - error
+    - tab
+  newline-after-var:
+    - error
+    - always
+  no-tabs:
+    - off
+  no-unused-vars:
+    - off
+  import/order:
+    - error
+  quotes:
+    - off
+  valid-typeof:
+    - off
+  jsx-a11y/anchor-is-valid:
+    - off
+  react/jsx-uses-react:
+    - off
+  react/react-in-jsx-scope:
+    - off
+  "@typescript-eslint/no-unused-vars":
+    - error
+  "@typescript-eslint/quotes":
+    - error
+    - backtick
