@@ -7,8 +7,6 @@
     "dev": "ts-node --project tsconfig.server.json ./server.ts",
     "build": "next build && tsc --project tsconfig.server.json",
     "start": "node server.js -p $PORT",
-    "typeorm": "cross-env TS_NODE_PROJECT=tsconfig.ts-node.json TS_NODE_TRANSPILE_ONLY=true ts-node ./node_modules/typeorm/cli.js",
-    "migration": "npm run typeorm migration:run",
     "prepare": "husky install",
     "lint": "eslint . --ext ts --ext tsx --ext js",
     "tsc": "tsc"
