@@ -5,10 +5,10 @@ import '../styles/global.css'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
-				<>
-					<DefaultSeo {...SEO} />
-					<Component {...pageProps} />
-				</>
+		<>
+			<DefaultSeo {...SEO} />
+			<Component {...pageProps} />
+		</>
 	)
 }
 
