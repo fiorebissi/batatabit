@@ -13,7 +13,7 @@ const Header = () => {
 				<p className='mt-20 text-xl leading-7 text-soft-orange font-dmsans-bold'>
 					Batatabit te ayuda a navegar entre los diferentes precios y tendencias.
 				</p>
-				<a className='flex flex-row items-center text-xl font-bold rounded shadow-xl header--button bg-off-white text-warm-black font-dmsans-regular' href=''>
+				<a className='flex flex-row items-center text-xl font-bold rounded shadow-xl header--button bg-off-white text-warm-black font-dmsans-regular' href='#plans'>
 					Conoce Nuestros Planes
 					<IoChevronDownOutline className='inline-block ml-2' size={SIZE} />
 				</a>
