@@ -12,12 +12,14 @@ const Plans = () => {
 			</div>
 			<section className='plans-container--slider'>
 				<PlansCards title='Pago Anual' cost={5} information='*Plan básico para mantenerte informado' />
-				<span className='iconLeft'><IoChevronBackOutline size={SIZE} /></span>
+				<span className='mt-64'>
+					<IoChevronBackOutline className='text-gray-400 fill-current' size={SIZE} />
+				</span>
 				<PlansCards title='Pago Anual' cost={49} information='*Ahorras $129 comparado al plan mensual.'>
 					<p className='recommended font-inter-medium'>Recomendado</p>
 				</PlansCards>
-				<span className='iconRight'>
-					<IoChevronForwardOutline size={SIZE} />
+				<span className='mt-64'>
+					<IoChevronForwardOutline className='text-gray-400 fill-current' size={SIZE} />
 				</span>
 				<PlansCards title='Acceso de por vida' cost={99} information='*Ahorras $999+ comparado al plan anual.' />
 			</section>

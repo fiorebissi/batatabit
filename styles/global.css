@@ -132,21 +132,27 @@ height: 48px;
 	font-family: "Inter Medium", sans-serif;
 }
 
-/* .main-currency-table .currency-table--title {
+.main-currency-table .currency-table--title {
 margin-bottom: 15px;
 font-size: 1.8rem;
 font-weight: bold;
 line-height: 2.3rem;
-} */
+color: #F7931A;
+}
 
 .main-tables-container {
 	display: flex;
+	padding: 20px;
 	gap: 30px;
 	height: 390px;
 	overflow-x: scroll;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x proximity;
 }
+
+/* .main-tables-container span {
+	margin-top: calc(50% - 21rem);
+} */
 
 .currency-table-container {
 	width: 90%;
@@ -311,7 +317,7 @@ line-height: 2.3rem;
 	min-width: 320px;
 	padding-bottom: 70px;
 	text-align: center;
-	background-color: #E5E5E5;
+	background-color: #FAF8F7;
 }
 
 .plans--title {
@@ -319,7 +325,7 @@ line-height: 2.3rem;
 	min-width: 288px;
 	height: auto;
 	margin: 0 auto;
-	margin-bottom: 50px;
+	margin-bottom: 8px;
 }
 
 .plans--title h2 {
@@ -417,11 +423,6 @@ line-height: 2.3rem;
 	overflow-x: scroll;
 	overscroll-behavior-x: contain;
 	scroll-snap-type: x proximity;
-}
-
-.plans-container--slider span {
-	vertical-align: center;
-	color: #757575;
 }
 
 footer {
