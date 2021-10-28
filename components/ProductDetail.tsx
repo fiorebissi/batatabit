@@ -9,7 +9,7 @@ const ProductDetail = () => {
 
 	return (
 		<section className='main-product-detail bg-warm-black'>
-			<div className='product-detail--batata-logo'>
+			<div className='product-detail--batata-logo animate-bounce'>
 				<Image src={Batata} alt='Batatabit' blurDataURL={``} />
 			</div>
 			<div className='product-detail--title'>
