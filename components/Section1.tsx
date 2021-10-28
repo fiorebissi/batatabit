@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Bitcoin from '@public/bitcoin.svg'
+import Bitcoin from '@public/Bitcoin.svg'
 import { IoTrendingDownOutline, IoTrendingUp, IoChevronForwardOutline } from 'react-icons/io5'
 
 const Section1 = () => {
