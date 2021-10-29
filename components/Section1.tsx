@@ -1,8 +1,10 @@
 import Image from 'next/image'
 import Bitcoin from '@public/Bitcoin.svg'
 import { IoTrendingDownOutline, IoTrendingUp, IoChevronForwardOutline } from 'react-icons/io5'
+import useValues from '../hooks/useValues'
 
 const Section1 = () => {
+	const { bitValue, ethValue, daiValue, usdtValue, bitCom, ethCom, daiCom, usdtCom } = useValues()
 	const fecha = new Date().toLocaleString()
 	const SIZE = `30px`
 
@@ -24,19 +26,19 @@ const Section1 = () => {
 								<tbody>
 									<tr>
 										<td className='table__top-left'>Bitcoin</td>
-										<td className='table__top-right table__right'>$1.96 <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
+										<td className='table__top-right table__right'>${bitValue} <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
 									</tr>
 									<tr>
 										<td>Ethereum</td>
-										<td className='table__right'>$0.07 <IoTrendingUp className='ml-4 text-green-500 fill-current' /></td>
+										<td className='table__right'>${ethValue} <IoTrendingUp className='ml-4 text-green-500 fill-current' /></td>
 									</tr>
 									<tr>
-										<td>Ripple</td>
-										<td className='table__right'>$2.17 <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
+										<td>DAI</td>
+										<td className='table__right'>${daiValue} <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
 									</tr>
 									<tr>
-										<td className='table__bottom-left'>Stellar</td>
-										<td className='table__bottom-right table__right'>$4.96 <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
+										<td className='table__bottom-left'>USDT</td>
+										<td className='table__bottom-right table__right'>${usdtValue} <IoTrendingDownOutline className='ml-4 text-red-500 fill-current down' /></td>
 									</tr>
 								</tbody>
 							</table>
@@ -53,20 +55,20 @@ const Section1 = () => {
 						<div className='shadow-xl currency-table-container'>
 							<table>
 								<tr>
-									<td className='table__top-left'>Bitrade</td>
-									<td className='table__top-right table__right'>$21.96</td>
+									<td className='table__top-left'>Bitcoin</td>
+									<td className='table__top-right table__right'>${bitCom}</td>
 								</tr>
 								<tr>
-									<td>Bitpreco</td>
-									<td className='table__right'>$13.07</td>
+									<td>Ethereum</td>
+									<td className='table__right'>${ethCom}</td>
 								</tr>
 								<tr>
-									<td>Novadax</td>
-									<td className='table__right'>$13.15</td>
+									<td>DAI</td>
+									<td className='table__right'>${daiCom}</td>
 								</tr>
 								<tr>
-									<td className='table__bottom-left'>Coinext</td>
-									<td className='table__bottom-right table__right'>$14.96 </td>
+									<td className='table__bottom-left'>USDT</td>
+									<td className='table__bottom-right table__right'>${usdtCom} </td>
 								</tr>
 							</table>
 						</div>

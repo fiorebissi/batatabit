@@ -14,7 +14,8 @@
       "@repositorys/*": ["database/repositories/*"],
       "@services/*": ["services/*"],
       "@network/*": ["network/*"],
-      "@public/*": ["public/*"]
+      "@public/*": ["public/*"],
+			"@hooks/*": ["hooks/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
